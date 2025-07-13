@@ -1,0 +1,135 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #0077b6;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.scroll-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #e0faff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.gallery-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: 220px;
+  margin: 1rem auto;
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 400%;
+}
+
+.gallery img {
+  width:100%;
+  height: 250px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 1rem;
+}
+
+.slider-buttons button {
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+section {
+  padding: 1.5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.itinerary table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.itinerary th,
+.itinerary td {
+  padding: 0.75rem;
+  border: 1px solid #252323;
+  text-align: left;
+  background-color: rgb(243, 233, 235);
+}
+
+.price {
+  background: #dce1e6;
+  padding: 1.5rem;
+  border-left: 5px solid #67c2f3;
+  margin-top: 2rem;
+}
+
+.price h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.cta {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cta button {
+  background: #0077b6;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta button:hover {
+  background: #005f8a;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .cta button {
+    width: 80%;
+  }
+}
